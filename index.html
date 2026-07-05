@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viettel Wifi - Tin tức & Gói cước</title>
+    <meta
+      name="description"
+      content="Trang chủ hiển thị tin tức, gói cước wifi và gói cước sim Viettel."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside class="side-nav" aria-label="Điều hướng nội dung">
+      <div class="side-nav-title">Nội dung</div>
+      <a href="#tin-tuc" class="side-nav-link active" data-target="tin-tuc">Tin tức</a>
+      <a href="#wifi" class="side-nav-link" data-target="wifi">Wifi</a>
+      <a href="#sim" class="side-nav-link" data-target="sim">Sim</a>
+      <a href="#postpaid" class="side-nav-link" data-target="postpaid">Trả sau</a>
+      <a href="#camera" class="side-nav-link" data-target="camera">Camera</a>
+      <a href="#tivi" class="side-nav-link" data-target="tivi">Truyền hình</a>
+    </aside>
+
+    <header class="hero">
+      <nav class="nav container">
+        <div class="brand">Viettel Di Linh</div>
+        <div class="nav-links">
+          <a href="#tin-tuc">Tin tức</a>
+          <a href="#wifi">Wifi</a>
+          <a href="#sim">Sim</a>
+        </div>
+      </nav>
+
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Tin tức • Gói cước • Đăng ký nhanh</p>
+          <h1>Trang chủ Viettel với 3 khuôn nội dung rõ ràng</h1>
+          <p class="hero-text">
+            Bạn có thể tự cập nhật tin tức, gói cước wifi và gói cước sim chỉ bằng cách sửa các file JSON.
+          </p>
+        </div>
+        <div class="hero-card">
+          <h3>Hướng dẫn nhanh</h3>
+          <ul>
+            <li>Nhập dữ liệu vào các file JSON riêng</li>
+            <li>Gói wifi mở form đăng ký</li>
+            <li>Gói sim chuyển trực tiếp tới đường link</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner-section">
+      <div class="container banner-wrap">
+        <div id="banner-slider" class="banner-slider"></div>
+      </div>
+    </section>
+
+    <main>
+      <section id="tin-tuc" class="section container">
+        <div class="section-title">
+          <h2>Tin tức</h2>
+        </div>
+        <div id="news-list" class="card-grid"></div>
+      </section>
+
+      <section id="wifi" class="section section-accent">
+        <div class="container">
+          <div class="section-title">
+            <h2>Gói Cước Wifi</h2>
+          </div>
+          <div id="wifi-list" class="card-grid"></div>
+        </div>
+      </section>
+
+      <section id="sim" class="section container">
+        <div class="section-title">
+          <h2>Gói Cước Sim Trả Trước</h2>
+        </div>
+        <div id="sim-list" class="card-grid"></div>
+      </section>
+
+      <section id="postpaid" class="section section-accent">
+        <div class="container">
+          <div class="section-title">
+            <h2>Gói Cước Sim Trả Sau</h2>
+          </div>
+          <div id="postpaid-list" class="card-grid"></div>
+        </div>
+      </section>
+
+      <section id="camera" class="section section-accent">
+        <div class="container">
+          <div class="section-title">
+            <h2>Camera - Đồng Hồ</h2>
+          </div>
+          <div id="camera-list" class="card-grid"></div>
+        </div>
+      </section>
+
+      <section id="tivi" class="section container">
+        <div class="section-title">
+          <h2>Truyền hình số</h2>
+        </div>
+        <div id="tivi-list" class="card-grid"></div>
+      </section>
+    </main>
+
+    <div id="register-modal" class="modal hidden" aria-hidden="true">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Đăng ký gói wifi</h3>
+          <button id="close-register" class="close-btn" aria-label="Đóng">×</button>
+        </div>
+        <form id="register-form" class="form-panel">
+          <label>
+            Họ và tên
+            <input type="text" id="customer-name" required />
+          </label>
+          <label>
+            Gói cước
+            <select id="customer-package" required>
+              <option value="">-- Chọn gói --</option>
+            </select>
+          </label>
+          <div id="payment-section" class="payment-section">
+            <label>
+              Hình thức đóng cước
+              <select id="customer-term" required>
+                <option value="1m">Hàng tháng</option>
+                <option value="6m">6 tháng</option>
+                <option value="12m">1 năm (tặng 1 tháng)</option>
+              </select>
+            </label>
+            <div id="price-summary" class="price-summary">Vui lòng chọn gói để xem tổng tiền.</div>
+          </div>
+          <label>
+            Địa chỉ
+            <input type="text" id="customer-address" required />
+          </label>
+          <label>
+            Số điện thoại
+            <input type="tel" id="customer-phone" required />
+          </label>
+          <label>
+            Ghi chú
+            <textarea id="customer-note" rows="3" placeholder="Ví dụ: cần lắp ngay, cần báo trước..."></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Gửi đăng ký</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="news-modal" class="modal hidden" aria-hidden="true">
+      <div class="modal-content news-modal-content">
+        <div class="modal-header">
+          <h3 id="news-modal-title">Chi tiết tin tức</h3>
+          <button id="close-news" class="close-btn" aria-label="Đóng">×</button>
+        </div>
+        <div id="news-modal-body" class="news-modal-body"></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© 2026 Viettel Wifi. Website demo dùng cho GitHub Pages.</p>
+        <p>Dữ liệu được tải từ các file JSON riêng.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
