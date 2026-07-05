@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Tin tức mới nhất",
+    "date": "04/07/2026",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80",
+    "description": "Viettel mở thêm gói wifi ưu đãi cho gia đình và doanh nghiệp nhỏ.",
+    "detail": "Khách hàng có thể đăng ký gói mới với tốc độ cao, hỗ trợ lắp đặt nhanh và nhiều ưu đãi đặc biệt trong tháng này."
+  },
+  {
+    "title": "Ưu đãi tháng này",
+    "date": "01/07/2026",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
+    "description": "Miễn phí lắp đặt cho các khách hàng đăng ký trước ngày 15/07.",
+    "detail": "Chương trình ưu đãi áp dụng cho khách hàng đăng ký trước ngày 15/07, bao gồm miễn phí lắp đặt và hỗ trợ kỹ thuật tận nơi."
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Truyền hình số cơ bản",
+    "description": "Gói truyền hình số phù hợp cho gia đình cần xem kênh cơ bản.",
+    "price": "150.000đ/tháng",
+    "features": [
+      "Nhiều kênh truyền hình",
+      "Chất lượng hình ổn định",
+      "Hỗ trợ xem trên TV thông minh"
+    ]
+  },
+  {
+    "title": "Truyền hình số cao cấp",
+    "description": "Gói nhiều kênh và nội dung giải trí phong phú hơn.",
+    "price": "250.000đ/tháng",
+    "features": [
+      "Kênh quốc tế",
+      "Chất lượng hình tốt",
+      "Hỗ trợ xem lại chương trình"
+    ]
+  }
+]

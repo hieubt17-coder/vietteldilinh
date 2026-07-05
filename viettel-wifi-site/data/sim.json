@@ -1,0 +1,292 @@
+[
+  {
+  
+    "title": "Gói 6T5G125N",
+    "description": "Gói 5G chu kỳ 180 ngày.",
+    "price": "750.000đ/180 ngày",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "500GB/30 ngày"
+    ]
+  },
+  {
+  
+    "title": "Gói 12T5G125N",
+    "description": "Gói 5G chu kỳ 360 ngày.",
+    "price": "1.500.000đ/360 ngày",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "500GB/30 ngày"
+    ]
+  },
+  {
+
+    "title": "Gói 5G135N",
+    "description": "Gói 5G Data.",
+    "price": "135.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "6GB/ngày",
+      "TV360 4K",
+      "20GB Mybox"
+    ]
+  },
+  {
+  
+    "title": "Gói 5G150N",
+    "description": "Gói 5G Data.",
+    "price": "150.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "8GB/ngày",
+      "TV360 4K",
+      "30GB Mybox"
+    ]
+  },
+  {
+
+    "title": "Gói 5G160B",
+    "description": "Gói 5G Combo.",
+    "price": "160.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "4GB/ngày",
+      "TV360 4K",
+      "20GB Mybox",
+      "10 phút/cuộc gọi nội mạng (tối đa 1000 phút)",
+      "100 phút ngoại mạng"
+    ]
+  },
+  {
+
+    "title": "Gói 5G180B",
+    "description": "Gói 5G Combo.",
+    "price": "180.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "6GB/ngày",
+      "TV360 4K",
+      "30GB Mybox",
+      "10 phút/cuộc gọi nội mạng (tối đa 1000 phút)",
+      "100 phút ngoại mạng"
+    ]
+  },
+  {
+
+    "title": "Gói 5G200C",
+    "description": "Gói 5G Combo.",
+    "price": "200.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "8GB/ngày",
+      "Miễn phí 10 phút/cuộc gọi nội mạng",
+      "100 phút ngoại mạng"
+    ]
+  },
+  {
+
+    "title": "Gói 5G230B",
+    "description": "Gói 5G Combo.",
+    "price": "230.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "8GB/ngày",
+      "TV360 4K",
+      "50GB Mybox",
+      "20 phút/cuộc gọi nội mạng (tối đa 1000 phút)",
+      "150 phút ngoại mạng"
+    ]
+  },
+  {
+
+    "title": "Gói 5G280B",
+    "description": "Gói 5G Combo.",
+    "price": "280.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "10GB/ngày",
+      "TV360 4K",
+      "70GB Mybox",
+      "20 phút/cuộc gọi nội mạng (tối đa 1000 phút)",
+      "200 phút ngoại mạng"
+    ]
+  },
+  {
+
+    "title": "Gói 5G330B",
+    "description": "Gói 5G Combo.",
+    "price": "330.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "12GB/ngày",
+      "TV360 4K",
+      "100GB Mybox",
+      "20 phút/cuộc gọi nội mạng (tối đa 1000 phút)",
+      "300 phút ngoại mạng"
+    ]
+  },
+  {
+
+    "title": "Gói 5G380B",
+    "description": "Gói 5G Combo.",
+    "price": "380.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "15GB/ngày",
+      "TV360 4K",
+      "150GB Mybox",
+      "20 phút/cuộc gọi nội mạng (tối đa 1000 phút)",
+      "300 phút ngoại mạng"
+    ]
+  },
+  {
+
+    "title": "Gói 5G480B",
+    "description": "Gói 5G Combo.",
+    "price": "480.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "20GB/ngày",
+      "TV360 4K",
+      "200GB Mybox",
+      "20 phút/cuộc gọi nội mạng (tối đa 1000 phút)",
+      "300 phút ngoại mạng"
+    ]
+  },
+  {
+
+    "title": "Gói V90B",
+    "description": "Gói 4G Combo.",
+    "price": "90.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "1GB/ngày",
+      "10 phút/cuộc gọi nội mạng",
+      "30 phút ngoại mạng"
+    ]
+  },
+  {
+
+    "title": "Gói V120B",
+    "description": "Gói 4G Combo.",
+    "price": "120.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "1.5GB/ngày",
+      "10 phút/cuộc gọi nội mạng",
+      "50 phút ngoại mạng"
+    ]
+  },
+  {
+
+    "title": "Gói V160B",
+    "description": "Gói 4G Combo.",
+    "price": "160.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "4GB/ngày",
+      "10 phút/cuộc gọi nội mạng",
+      "100 phút ngoại mạng"
+    ]
+  },
+  {
+
+    "title": "Gói V180B",
+    "description": "Gói 4G Combo.",
+    "price": "180.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "6GB/ngày",
+      "10 phút/cuộc gọi nội mạng",
+      "100 phút ngoại mạng"
+    ]
+  },
+  {
+
+    "title": "Gói V200B",
+    "description": "Gói 4G Combo.",
+    "price": "200.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "8GB/ngày",
+      "10 phút/cuộc gọi nội mạng",
+      "100 phút ngoại mạng"
+    ]
+  },
+  {
+
+    "title": "Gói MXH100",
+    "description": "Gói miễn phí mạng xã hội.",
+    "price": "100.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "1GB/ngày",
+      "Miễn phí TikTok",
+      "Miễn phí YouTube",
+      "Miễn phí Facebook",
+      "Miễn phí Messenger"
+    ]
+  },
+  {
+
+    "title": "Gói MXH120",
+    "description": "Gói miễn phí mạng xã hội.",
+    "price": "120.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "1GB/ngày",
+      "10 phút/cuộc gọi nội mạng",
+      "30 phút ngoại mạng",
+      "Miễn phí TikTok",
+      "Miễn phí YouTube",
+      "Miễn phí Facebook",
+      "Miễn phí Messenger"
+    ]
+  },
+  {
+
+    "title": "Gói MXH150",
+    "description": "Gói miễn phí mạng xã hội.",
+    "price": "150.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "1.5GB/ngày",
+      "10 phút/cuộc gọi nội mạng",
+      "50 phút ngoại mạng",
+      "Miễn phí TikTok",
+      "Miễn phí YouTube",
+      "Miễn phí Facebook",
+      "Miễn phí Messenger"
+    ]
+  },
+  {
+
+    "title": "Gói SD90",
+    "description": "Gói chỉ dùng Data.",
+    "price": "90.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "1.5GB/ngày"
+    ]
+  },
+  {
+
+    "title": "Gói SD120",
+    "description": "Gói chỉ dùng Data.",
+    "price": "120.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "2GB/ngày"
+    ]
+  },
+  {
+
+    "title": "Gói SD135",
+    "description": "Gói chỉ dùng Data.",
+    "price": "135.000đ/tháng",
+    "link": "https://viettel.vn/lan-toa/goi-cuoc?kh=hieubt_ldg_cnkd",
+    "features": [
+      "5GB/ngày"
+    ]
+  }
+]
