@@ -480,8 +480,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('customer-package')?.addEventListener('change', updatePricingSummary);
   document.getElementById('customer-term')?.addEventListener('change', updatePricingSummary);
 
-  document.getElementById('register-form')?.addEventListener('submit', (event) => {
+  document.getElementById('register-form')?.addEventListener('submit', async (event) => {
     event.preventDefault();
+    
+    const submitBtn = event.target.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = '⏳ Đang gửi...';
+    submitBtn.disabled = true;
+
     const name = document.getElementById('customer-name').value.trim();
     const packageName = document.getElementById('customer-package').value;
     const paymentTerm = document.getElementById('customer-term').value;
@@ -491,23 +497,46 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     if (!name || !packageName || !address || !phone) {
       alert('Vui lòng nhập đầy đủ thông tin.');
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
       return;
     }
 
     const category = getPlanCategory(packageName);
     const total = calculatePackageTotal(packageName);
-    const paymentLabel = category === 'wifi' || category === 'tivi' ? (paymentTerm === '6m' ? '6 tháng' : paymentTerm === '12m' ? '1 năm (ưu đãi tặng 1 tháng)' : 'hàng tháng') : 'không áp dụng';
-    const installLine = category === 'wifi' ? `\nPhí lắp đặt: ${formatCurrency(300000)}` : '';
-    const message = `Khách hàng: ${name}\nGói: ${packageName}\nHình thức: ${paymentLabel}${installLine}\nTổng tiền: ${total ? formatCurrency(total) : 'Chưa xác định'}\nĐịa chỉ: ${address}\nSĐT: ${phone}${note ? `\nGhi chú: ${note}` : ''}`;
-    const email = 'bangtrunghieu777@gmail.com';
-    const subject = encodeURIComponent('Đăng ký gói dịch vụ Viettel');
-    const body = encodeURIComponent(message);
+    const paymentLabel = category === 'wifi' || category === 'tivi' ? (paymentTerm === '6m' ? '6 tháng' : paymentTerm === '12m' ? '1 năm (tặng 1 tháng)' : 'hàng tháng') : 'N/A';
 
-    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
-    window.open(`https://zalo.me/0333031688?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('package', packageName);
+    formData.append('payment_term', paymentLabel);
+    formData.append('address', address);
+    formData.append('phone', phone);
+    formData.append('note', note);
+    formData.append('total_price', formatCurrency(total));
+    formData.append('_subject', 'Đăng ký gói dịch vụ Viettel Di Linh');
+    formData.append('_captcha', 'false');
+    formData.append('_next', window.location.href);
 
-    alert(`Đăng ký thành công cho ${name}\nGói: ${packageName}\nHình thức: ${paymentLabel}${category === 'wifi' ? `\nPhí lắp đặt: ${formatCurrency(300000)}` : ''}\nTổng tiền: ${total ? formatCurrency(total) : 'Chưa xác định'}`);
-    event.target.reset();
-    closeModal();
+    try {
+      const response = await fetch('https://formsubmit.co/bangtrunghieu777@gmail.com', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (response.ok) {
+        alert(`✅ Đăng ký thành công!\n\nKhách hàng: ${name}\nGói: ${packageName}\nHình thức: ${paymentLabel}\nTổng tiền: ${formatCurrency(total)}\n\nChúng tôi sẽ liên hệ với bạn sớm nhất!`);
+        event.target.reset();
+        closeModal();
+      } else {
+        alert('❌ Gửi không thành công, vui lòng thử lại!');
+      }
+    } catch (error) {
+      alert('❌ Lỗi: ' + error.message);
+      console.error(error);
+    } finally {
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+    }
   });
 });
