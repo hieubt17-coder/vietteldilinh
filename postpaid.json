@@ -1,0 +1,105 @@
+[
+  {
+    "title": "Gói V120K",
+    "description": "Gói cước data 1.5GB/ngày.",
+    "price": "120.000đ/tháng",
+    "features": [
+      "1.5GB/ngày",
+      "Miễn phí 20 phút/cuộc nội mạng",
+      "50 phút ngoại mạng"
+    ]
+  },
+  {
+    "title": "Gói V160K",
+    "description": "Gói cước data 4GB/ngày.",
+    "price": "160.000đ/tháng",
+    "features": [
+      "4GB/ngày",
+      "Miễn phí 20 phút/cuộc nội mạng",
+      "60 phút ngoại mạng",
+      "60 SMS nội mạng"
+    ]
+  },
+  {
+    "title": "Gói V180K",
+    "description": "Gói cước data 6GB/ngày.",
+    "price": "180.000đ/tháng",
+    "features": [
+      "6GB/ngày",
+      "Miễn phí 10 phút/cuộc nội mạng",
+      "100 phút ngoại mạng"
+    ]
+  },
+  {
+    "title": "Gói N200",
+    "description": "Gói cước data 6GB/ngày.",
+    "price": "200.000đ/tháng",
+    "features": [
+      "6GB/ngày",
+      "Miễn phí 20 phút/cuộc nội mạng",
+      "100 phút ngoại mạng",
+      "100 SMS trong nước",
+      "Miễn phí thông báo cuộc gọi nhỡ"
+    ]
+  },
+  {
+    "title": "Gói N250",
+    "description": "Gói cước data 8GB/ngày.",
+    "price": "250.000đ/tháng",
+    "features": [
+      "8GB/ngày",
+      "Miễn phí 30 phút/cuộc nội mạng",
+      "150 phút ngoại mạng",
+      "150 SMS trong nước",
+      "Miễn phí thông báo cuộc gọi nhỡ"
+    ]
+  },
+  {
+    "title": "Gói N300",
+    "description": "Gói cước data 10GB/ngày.",
+    "price": "300.000đ/tháng",
+    "features": [
+      "10GB/ngày",
+      "Miễn phí 60 phút/cuộc nội mạng",
+      "200 phút ngoại mạng",
+      "200 SMS trong nước",
+      "Miễn phí thông báo cuộc gọi nhỡ"
+    ]
+  },
+  {
+    "title": "Gói N500",
+    "description": "Gói cước data 15GB/ngày.",
+    "price": "500.000đ/tháng",
+    "features": [
+      "15GB/ngày",
+      "Miễn phí 60 phút/cuộc nội mạng",
+      "300 phút ngoại mạng",
+      "250 SMS trong nước",
+      "Miễn phí thông báo cuộc gọi nhỡ"
+    ]
+  },
+  {
+    "title": "Gói N1000",
+    "description": "Gói cước data 30GB/ngày.",
+    "price": "1.000.000đ/tháng",
+    "features": [
+      "30GB/ngày",
+      "Miễn phí 60 phút/cuộc nội mạng",
+      "300 phút ngoại mạng",
+      "250 SMS trong nước",
+      "Miễn phí thông báo cuộc gọi nhỡ"
+    ]
+  },
+  {
+    "title": "Gói N2000",
+    "description": "Gói cước data 50GB/ngày.",
+    "price": "2.000.000đ/tháng",
+    "features": [
+      "50GB/ngày",
+      "Miễn phí 60 phút/cuộc nội mạng",
+      "400 phút ngoại mạng",
+      "250 SMS trong nước",
+      "Miễn phí thông báo cuộc gọi nhỡ"
+    ]
+  }
+]

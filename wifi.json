@@ -1,0 +1,62 @@
+[
+  {
+    "title": "NETVT01_T",
+    "description": "Gói Internet FTTH dành cho hộ gia đình sử dụng cơ bản.",
+    "price": "195.000đ/tháng",
+    "features": [
+      "Băng thông 300Mbps",
+      "Thiết bị ONT Dualband",
+      "Chuẩn WiFi 6",
+      "Phù hợp 5 - 10 thiết bị"
+    ]
+  },
+  {
+    "title": "NETVT2_T",
+    "description": "Gói Internet FTTH tốc độ cao dành cho gia đình nhiều thiết bị.",
+    "price": "240.000đ/tháng",
+    "features": [
+      "Băng thông 500Mbps",
+      "Up to 1Gbps",
+      "Thiết bị ONT Dualband",
+      "Chuẩn WiFi 6",
+      "Phù hợp xem 4K, chơi game, nhiều thiết bị"
+    ]
+  },
+  {
+    "title": "MESHVT1_T",
+    "description": "Gói Internet FTTH kèm 1 bộ Mesh WiFi mở rộng vùng phủ sóng.",
+    "price": "210.000đ/tháng",
+    "features": [
+      "Băng thông 300Mbps",
+      "ONT Dualband",
+      "1 Mesh WiFi",
+      "Chuẩn WiFi 6",
+      "Phủ sóng tốt cho nhà nhiều tầng"
+    ]
+  },
+  {
+    "title": "MESHVT2_T",
+    "description": "Gói Internet FTTH kèm 2 bộ Mesh WiFi cho vùng phủ rộng.",
+    "price": "245.000đ/tháng",
+    "features": [
+      "Băng thông 500Mbps",
+      "Up to 1Gbps",
+      "ONT Dualband",
+      "2 Mesh WiFi",
+      "Chuẩn WiFi 6",
+      "Phù hợp nhà lớn hoặc nhiều phòng"
+    ]
+  },
+  {
+    "title": "MESHVT3_T",
+    "description": "Gói Internet FTTH kèm 3 bộ Mesh WiFi phủ sóng toàn bộ ngôi nhà.",
+    "price": "299.000đ/tháng",
+    "features": [
+      "Băng thông 500Mbps",
+      "ONT Dualband",
+      "3 Mesh WiFi",
+      "Chuẩn WiFi 6",
+      "Phủ sóng toàn bộ nhà, kết nối ổn định"
+    ]
+  }
+]
