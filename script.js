@@ -438,13 +438,13 @@ function initSideNavigation() {
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     [newsItems, wifiPlans, simPlans, cameraPlans, tiviPlans, postpaidPlans, bannerItems] = await Promise.all([
-      loadJson('./data/news.json'),
-      loadJson('./data/wifi.json'),
-      loadJson('./data/sim.json'),
-      loadJson('./data/camera.json'),
-      loadJson('./data/tivi.json'),
-      loadJson('./data/postpaid.json'),
-      loadJson('./data/banner.json'),
+      loadJson('./news.json'),
+      loadJson('./wifi.json'),
+      loadJson('./sim.json'),
+      loadJson('./camera.json'),
+      loadJson('./tivi.json'),
+      loadJson('./postpaid.json'),
+      loadJson('./banner.json'),
     ]);
 
     renderBanner(bannerItems);
