@@ -86,6 +86,7 @@ function openNewsModal(item) {
 
   modal.classList.remove('hidden');
   modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
 }
 
 function closeNewsModal() {
@@ -93,6 +94,7 @@ function closeNewsModal() {
   if (!modal) return;
   modal.classList.add('hidden');
   modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
 }
 
 function renderNews(items) {
@@ -237,7 +239,7 @@ function updatePricingSummary() {
   const priceText = `${formatCurrency(monthlyPrice)} × ${months} tháng`;
   const installFeeLine = category === 'wifi' ? `<br>Phí lắp đặt: <strong>${formatCurrency(300000)}</strong>` : '';
 
-  summary.innerHTML = `Giá tháng: <strong>${priceText}</strong><br>${offerLabel ? `<span style="color:#a70012; font-weight:700;">${offerLabel}</span><br>` : ''}${installFeeLine}<br>Tổng tiền dự kiến: <strong>${formatCurrency(total)}</strong>`;
+  summary.innerHTML = `Giá tháng: <strong>${priceText}</strong><br>${offerLabel ? `<span style="color:#a70012; font-weight:700;">${offerLabel}</span><br>` : ''}${installFeeLine}<br>Tổng tiền: <strong>${formatCurrency(total)}</strong>`;
 }
 
 function renderWifiPlans(items) {
@@ -390,6 +392,7 @@ function openModal() {
   if (!modal) return;
   modal.classList.remove('hidden');
   modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
 }
 
 function closeModal() {
@@ -397,6 +400,7 @@ function closeModal() {
   if (!modal) return;
   modal.classList.add('hidden');
   modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
 }
 
 function initSideNavigation() {
@@ -494,7 +498,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const total = calculatePackageTotal(packageName);
     const paymentLabel = category === 'wifi' || category === 'tivi' ? (paymentTerm === '6m' ? '6 tháng' : paymentTerm === '12m' ? '1 năm (ưu đãi tặng 1 tháng)' : 'hàng tháng') : 'không áp dụng';
     const installLine = category === 'wifi' ? `\nPhí lắp đặt: ${formatCurrency(300000)}` : '';
-    const message = `Khách hàng: ${name}\nGói: ${packageName}\nHình thức: ${paymentLabel}${installLine}\nTổng tiền: ${total ? formatCurrency(total) : 'Chưa xác định'}\nĐịa chỉ: ${address}\nSĐT: ${phone}\nGhi chú: ${note || 'Không có'}`;
+    const message = `Khách hàng: ${name}\nGói: ${packageName}\nHình thức: ${paymentLabel}${installLine}\nTổng tiền: ${total ? formatCurrency(total) : 'Chưa xác định'}\nĐịa chỉ: ${address}\nSĐT: ${phone}${note ? `\nGhi chú: ${note}` : ''}`;
     const email = 'bangtrunghieu777@gmail.com';
     const subject = encodeURIComponent('Đăng ký gói dịch vụ Viettel');
     const body = encodeURIComponent(message);
@@ -502,7 +506,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
     window.open(`https://zalo.me/0333031688?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
 
-    alert(`Đăng ký thành công cho ${name}\nGói: ${packageName}\nHình thức: ${paymentLabel}${category === 'wifi' ? `\nPhí lắp đặt: ${formatCurrency(300000)}` : ''}\nTổng tiền: ${total ? formatCurrency(total) : 'Chưa xác định'}\nĐịa chỉ: ${address}\nSĐT: ${phone}\nGhi chú: ${note || 'Không có'}`);
+    alert(`Đăng ký thành công cho ${name}\nGói: ${packageName}\nHình thức: ${paymentLabel}${category === 'wifi' ? `\nPhí lắp đặt: ${formatCurrency(300000)}` : ''}\nTổng tiền: ${total ? formatCurrency(total) : 'Chưa xác định'}`);
     event.target.reset();
     closeModal();
   });
