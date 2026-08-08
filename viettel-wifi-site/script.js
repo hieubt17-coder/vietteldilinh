@@ -495,7 +495,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const paymentLabel = category === 'wifi' || category === 'tivi' ? (paymentTerm === '6m' ? '6 tháng' : paymentTerm === '12m' ? '1 năm (ưu đãi tặng 1 tháng)' : 'hàng tháng') : 'không áp dụng';
     const installLine = category === 'wifi' ? `\nPhí lắp đặt: ${formatCurrency(300000)}` : '';
     const message = `Khách hàng: ${name}\nGói: ${packageName}\nHình thức: ${paymentLabel}${installLine}\nTổng tiền: ${total ? formatCurrency(total) : 'Chưa xác định'}\nĐịa chỉ: ${address}\nSĐT: ${phone}\nGhi chú: ${note || 'Không có'}`;
-    const email = 'bangtrunghieu777@gmail.com';
+    const email = 'bangtrunghieu778@gmail.com';
     const subject = encodeURIComponent('Đăng ký gói dịch vụ Viettel');
     const body = encodeURIComponent(message);
 
